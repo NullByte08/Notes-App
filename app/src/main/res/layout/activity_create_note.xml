@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNoteActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SAVE"
+                android:padding="10dp"
+                android:id="@+id/btnSave"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+android:layout_below="@+id/toolbar"
+        android:background="#ebff93"
+        tools:context=".CreateNoteActivity"
+        tools:showIn="@layout/activity_create_note">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Title"
+            android:padding="10dp"
+            android:id="@+id/edtTitle"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Type here..."
+            android:id="@+id/edtDescription"
+            android:padding="10dp"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
